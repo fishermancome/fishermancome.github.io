@@ -1,10 +1,12 @@
 encoding: utf-8
-
 baseurl: ""
 description: "It's never too late to learn"
 keyword: "Python"
 
 plugins: [jekyll-paginate]
 paginate: 10
-paginate_path: /page:num/
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
