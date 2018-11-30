@@ -1,6 +1,31 @@
 ---
-layout: default
+layout: page
 ---
 
 <h1>Fisherman's Blog</h1>
 <p><a href="{{ site.url }}/about.html">关于</a></p>
+
+<div>
+	{% for post in paginator.posts %}
+
+	<div class="content">
+		 {{ post.content |strip_html | truncatewords:35 }}
+	</div>
+
+{% endfor %}
+</div>
+
+
+<div class="pagination">
+{% if paginator.previous_page %}
+	<a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+{% else %}
+	<span class="previous">Previous</span>
+{% endif %}
+	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="/page{{ paginator.next_page }}" class="next">Next</a>
+	{% else %}
+	<span class="next ">Next</span>
+	{% endif %}
+</div>
