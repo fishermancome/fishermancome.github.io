@@ -1,12 +1,11 @@
-encoding: utf-8
-baseurl: ""
-description: "It's never too late to learn"
-keyword: "Python"
+name: Fisherman's Blog
 
-plugins: [jekyll-paginate]
-paginate: 10
+baseurl: ""
+
 
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
