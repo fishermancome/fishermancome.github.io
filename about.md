@@ -1,1 +1,7 @@
-about.md
+---
+layout: default
+title: About
+---
+
+
+## some page content here....
