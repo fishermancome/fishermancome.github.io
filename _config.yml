@@ -1,5 +1,6 @@
 name: Fisherman's Blog
-
+description: It's Never too late to learn
+keywords: Python, Bash
 baseurl: ""
 
 
