@@ -14,7 +14,7 @@ layout: page
 		</h3>
 		{% endif %}
 		<div class="post-content-preview">
-			{{ post.content | strip_html | truncate:200 }}
+			{{ post.content | strip_html | truncate:30 }}...
 		</div>
 	</a>
 	<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -36,7 +36,7 @@ layout: page
 	}
 	.post-url:hover{
 		text-decoration: none;
-		color:pink;
-		background-color: pink;
+		color:#000;
+		background-color: #fff;
 	}
 </style>
